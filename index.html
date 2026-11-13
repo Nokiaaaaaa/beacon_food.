@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101d35">
+  <title>BEacon Bites | Mess & Canteen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement"><span class="pulse"></span> BEacon Institute of Technology, Meerut <b>·</b> Campus Mess & Canteen <span class="announce-right">GOOD FOOD. GOOD MOOD. GOOD CAMPUS.</span></div>
+  <header class="header">
+    <a class="brand" href="#home"><span><strong>BEacon <i>FOOD</i></strong><small>MESS & CANTEEN</small></span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="nav">
+      <a href="#home" class="active">Home</a><a href="#menu">Food Menu</a><a href="#quality">Food Quality</a><a href="#reviews">Reviews</a>
+    </nav>
+    <a href="#menu" class="header-cta">EXPLORE MENU <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <div class="hero-kicker"><span></span> YOUR CAMPUS FOOD DESTINATION</div>
+        <h1>Fuel your day.<br><em>Own your</em> campus.</h1>
+        <p>From your first chai to a full lunch between lectures — discover the food, flavours and student favourites at BEacon.</p>
+        <div class="hero-buttons"><a class="btn-orange" href="#menu">EXPLORE TODAY'S MENU <b>↗</b></a><a href="#quality" class="btn-outline">OUR FOOD PROMISE</a></div>
+        <div class="hero-mini"><div class="mini-avatars"><span>🍛</span><span>🥪</span><span>☕</span></div><span><b>Made for campus life</b><small>Easy choices. Clear prices. Student reviews.</small></span></div>
+      </div>
+      <div class="hero-side">
+        <div class="hero-badge"><span>THE</span><strong>BEacon</strong><b>FOOD SPOT</b><i>✳</i></div>
+        <div class="hero-note"><b>YOUR BREAK,</b><br><em>YOUR WAY.</em><span>Scroll to find your favourite ↓</span></div>
+      </div>
+      <div class="hero-bottom"><span>01 / CAMPUS EATS</span><span>FRESH PICKS · FAIR PRICES · REAL REVIEWS</span><span>MEERUT, INDIA</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Campus food highlights"><div class="ticker-track"><span>GOOD FOOD, GOOD MOOD</span><b>✳</b><span>STUDENT FAVOURITES</span><b>✳</b><span>FRESHLY SERVED</span><b>✳</b><span>PRICES IN ₹</span><b>✳</b><span>GOOD FOOD, GOOD MOOD</span><b>✳</b><span>STUDENT FAVOURITES</span><b>✳</b><span>FRESHLY SERVED</span><b>✳</b><span>PRICES IN ₹</span><b>✳</b></div></section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-top"><div><div class="eyebrow"><span>01</span> THE FOOD LINE-UP</div><h2>Pick your <em>plate.</em></h2><p class="subcopy">Big cravings or a quick bite? Find what's right for your break.</p></div><div class="section-aside"><strong>THE MENU</strong><span>SCROLL. CHOOSE. ENJOY.</span></div></div>
+      <div class="menu-controls"><div class="tabs" id="filters"><button class="tab selected" data-cat="all">All food</button><button class="tab" data-cat="meal">Meals</button><button class="tab" data-cat="snack">Snacks</button><button class="tab" data-cat="drink">Drinks</button></div><div class="search"><span>⌕</span><input id="search" type="search" placeholder="Search your craving..." aria-label="Search food"></div></div>
+      <div class="diet-controls"><span>SHOW ME</span><button class="diet selected" data-diet="all">Everything</button><button class="diet" data-diet="veg">🟢 Veg</button><button class="diet" data-diet="nonveg">🔴 Non-veg</button><span class="demo-label">DEMO MENU · SAMPLE PRICES</span></div>
+      <div class="food-grid" id="foodGrid"></div>
+      <div class="menu-bottom"><span>CAN'T DECIDE? <b>Go with the student favourite.</b></span><a href="#reviews">SEE WHAT STUDENTS SAY ↗</a></div>
+    </section>
+
+    <section class="quality" id="quality">
+      <div class="quality-image"><div class="quality-photo-label">THE BEacon<br><b>FOOD PROMISE</b></div><div class="quality-circle">✳<span>GOOD<br>FOOD<br>MATTERS</span></div></div>
+      <div class="quality-content"><div class="eyebrow light"><span>02</span> MORE THAN A MEAL</div><h2>Good food is<br><em>no small thing.</em></h2><p class="quality-lead">A better campus break starts with the basics done right. Here's what students should be able to expect from a good mess and canteen experience.</p>
+        <div class="quality-points">
+          <article><b>01</b><div><strong>Freshness you can see</strong><small>Freshly prepared food, served at the right temperature.</small></div><i>↗</i></article>
+          <article><b>02</b><div><strong>Clean from counter to table</strong><small>Neat serving spaces, clean utensils and dining areas.</small></div><i>↗</i></article>
+          <article><b>03</b><div><strong>Worth every rupee</strong><small>Clear prices and portions that make sense for students.</small></div><i>↗</i></article>
+          <article><b>04</b><div><strong>Your voice counts</strong><small>Honest ratings and feedback help improve the experience.</small></div><i>↗</i></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section" id="reviews">
+      <div class="section-top"><div><div class="eyebrow"><span>03</span> THE STUDENT VERDICT</div><h2>Real bites.<br><em>Your ratings.</em></h2><p class="subcopy">Tried something? Leave a rating and help the next student choose.</p></div><div class="review-stamp"><strong id="reviewCount">0</strong><span>REVIEWS<br>ON THIS DEVICE</span></div></div>
+      <form class="review-form" id="reviewForm">
+        <div class="form-heading"><strong>DROP YOUR REVIEW</strong><span>✳ YOUR OPINION MATTERS</span></div>
+        <div class="form-grid">
+          <label>Your name <small>OPTIONAL</small><input id="studentName" placeholder="Your name"></label>
+          <label>What did you try? <select id="reviewFood" required><option value="">Select food item</option></select></label>
+          <fieldset><legend>Rate your experience</legend><div class="star-picker" id="starPicker"><button type="button" data-star="1">☆</button><button type="button" data-star="2">☆</button><button type="button" data-star="3">☆</button><button type="button" data-star="4">☆</button><button type="button" data-star="5">☆</button></div><small id="starHint">TAP TO RATE</small></fieldset>
+          <label class="comment-field">Your feedback<textarea id="comment" rows="3" placeholder="Taste, freshness, portion size..."></textarea></label>
+        </div>
+        <div class="form-bottom"><span id="formMessage">Keep it honest. Keep it helpful.</span><button type="submit" class="btn-orange">POST MY REVIEW <b>↗</b></button></div>
+      </form>
+      <p class="storage-note">Student demo: reviews are stored in this browser only. A shared live review system needs a database and backend.</p>
+    </section>
+  </main>
+
+  <footer><div class="footer-main"><a class="brand footer-brand" href="#home"><span><strong>BEacon <i>FOOD</i></strong><small>MESS & CANTEEN</small></span></a><p>Made for the BEacon campus community.<br><b>Eat well. Study well. Repeat.</b></p><a class="back-top" href="#home">BACK TO TOP ↑</a></div><div class="footer-bottom"><span>BEacon Institute of Technology · Meerut</span><span>STUDENT PROJECT WEBSITE · 2026</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
